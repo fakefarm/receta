@@ -31,6 +31,7 @@ recipes = [
     name: 'Baked Brussel Sprouts',
   },
 ]
+
 controllers = angular.module('controllers',[])
 controllers.controller("RecipesController", [ '$scope', '$routeParams', '$location',
   ($scope,$routeParams,$location)->
