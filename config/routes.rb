@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  get 'recipes/index'
+
+  resources :recipes, only: [:index]
 end
+
