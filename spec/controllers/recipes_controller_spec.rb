@@ -27,7 +27,7 @@ describe RecipesController do
         expect(results.size).to eq(2)
       end
       it "should include 'Baked Potato w/ Cheese'" do
-        expect(results.map(&extract_name).to include('Baked Potato w/ Cheese')
+        expect(results.map(&extract_name)).to include('Baked Potato w/ Cheese')
       end
       it "should include 'Baked Brussel Sprouts'" do
         expect(results.map(&extract_name)).to include('Baked Brussel Sprouts')
