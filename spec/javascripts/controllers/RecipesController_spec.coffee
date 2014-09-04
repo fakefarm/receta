@@ -15,7 +15,7 @@ describe "RecipesController", ->
       routeParams = $routeParams
       routeParams.keywords = keywords
       httpBackend = $httpBackend
-      
+
       if results
         request = new RegExp("\/recipes.*keywords=#{keywords}")
         httpBackend.expectGET(request).respond(results)
@@ -37,7 +37,7 @@ describe "RecipesController", ->
 
       it 'defaults to no recipes', ->
         expect(scope.recipes).toEqualData([])
-    
+
     describe 'with keywords', ->
       keywords = 'foo'
       recipes = [

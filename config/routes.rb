@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  resources :recipes
+  resources :recipes, only: [:index, :show]
 end
 
